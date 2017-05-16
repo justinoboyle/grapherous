@@ -10,8 +10,8 @@ window.$ = $;
 
 
 $(document).ready(() => {
-    if (localStorage.lastCode)
-        window.store.editor.setValue(localStorage.lastCode);
+    // if (localStorage.lastCode)
+    //     window.store.editor.setValue(localStorage.lastCode);
     let down = false;
     window.mouseX = window.innerWidth / 2; window.mouseY = window.innerHeight;
     // $('.grabby').mousedown(() => down = true);
