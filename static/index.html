@@ -1,0 +1,44 @@
+<script src="/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js"></script>
+<link rel="stylesheet" type="text/css" href="/style.css" />
+<style id="hotstyle"></style>
+<span><overlayDump></overlayDump></span>
+<div class="flexbox">
+    <div class="left"><canvas></canvas></div>
+    <div class="grabby"></div>
+    <div class="right">
+        <div id="editor">// Remember, everything here is being executed in your browser. Don't paste in things that you don't trust. Uncomment something to try it!
+
+graph.overlayBottom = false; // display the overlay at the top of the screen;
+// overlay('Example'); // Display something in the overlay, if there isn't an error.
+
+graph.axis = {
+    x: {
+        min: -10,
+        max: 10
+    },
+    y: {
+        min: -10,
+        max: 10
+    }
+};
+
+graph.display = {
+    ticks: {
+        every: 50,
+        height: 10
+    }
+}
+
+// graph.f = x => x; // graph a straight line
+// graph.f.color = 'blue'; // make that line blue</div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            window.store.editor = ace.edit("editor");
+            window.store.editor.setTheme("ace/theme/monokai");
+            window.store.editor.getSession().setMode("ace/mode/javascript");
+
+        </script>
+    </div>
+</div>
